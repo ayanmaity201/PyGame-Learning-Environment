@@ -193,8 +193,8 @@ class Pixelcopter(PyGameWrapper):
             "player_dist_to_ceil": self.player.pos.y - (current_terrain.pos.y - self.height * 0.25),
             "player_dist_to_floor": (current_terrain.pos.y + self.height * 0.25) - self.player.pos.y,
             "next_gate_dist_to_player": min_dist,
-            "next_gate_block_top": min_block.pos.y,
-            "next_gate_block_bottom": min_block.pos.y + min_block.height
+            "next_gate_block_top": 0, #min_block.pos.y,
+            "next_gate_block_bottom": 0 #min_block.pos.y + min_block.height
         }
 
         return state
