@@ -224,8 +224,8 @@ class Pixelcopter(PyGameWrapper):
         self.player_group = pygame.sprite.Group()
         self.player_group.add(self.player)
 
-        self.block_group = pygame.sprite.Group()
-        self._add_blocks()
+        ##self.block_group = pygame.sprite.Group()
+        ##self._add_blocks()
 
         self.terrain_group = pygame.sprite.Group()
         self._add_terrain(0, self.width * 4)
